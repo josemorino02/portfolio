@@ -1,46 +1,21 @@
 body {
-    font-family: Arial;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background: #0f172a;
     color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    background: #020617;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Section */
 section {
-    padding: 60px;
+    padding: 80px 20px;
     text-align: center;
 }
 
+/* Card */
 .card {
     background: #1e293b;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 400px;
+    border: none;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
@@ -48,17 +23,159 @@ section {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+.card img {
+    border-radius: 12px 12px 0 0;
+}
 
+/* Image */
+#home img {
+    margin-bottom: 20px;
+}
+
+/* About */
+#about img {
+    border-radius: 12px;
+}
+
+/* Social Icons */
+i {
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+/* Skills */
+.skill-item {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.skill-line {
+    height: 6px;
+    background: #2d3748;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0;
+    background: #38bdf8;
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     section {
-        padding: 30px;
+        padding: 50px 15px;
     }
 }
 
-section {
-    padding-top: 80px;
+h1, h2, h5 {
+    letter-spacing: 0.5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact a:focus,
+#contact a:active {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact a {
+    text-decoration: none; /* hilangin garis biru */
+}
+
+#contact a:focus,
+#contact a:active {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact i {
+    font-size: 32px;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+#contact i:hover {
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+
+#contact p a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    color: #38bdf8;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 320px; /* penting biar sejajar */
+    gap: 15px;
+}
+
+.contact-item i {
+    font-size: 26px;
+    width: 30px; /* bikin icon sejajar */
+    text-align: center;
+}
+
+.contact-item span {
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+p, span {
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.contact-item span {
+    opacity: 0.9;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
 }
